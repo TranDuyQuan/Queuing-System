@@ -1,0 +1,14 @@
+.admin_layout {
+    display: flex;
+    height: 100vh;
+}
+
+.admin_layout .main {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.admin_layout .main::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}

@@ -1,0 +1,232 @@
+.navbar {
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex !important;
+    flex-direction: column;
+    min-height: 100vh !important;
+    justify-content: flex-start !important;
+}
+
+.navbar .logo-navbar {
+    margin: 15px auto;
+}
+
+.navbar .menu-navbar {
+    margin-top: 15px;
+    display: flex;
+    min-height: 75vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .menu-navbar .log-out {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: #FFF2E7;
+    border-radius: 7px;
+    border: none;
+    color: #ff7506;
+    font-weight: 700;
+}
+
+.navbar .menu-navbar .log-out p {
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+
+.navbar .menu-navbar ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar .menu-navbar ul li {
+    list-style-type: none;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu-navbar ul li a {
+    padding-left: 20px;
+}
+
+.navbar .menu-navbar ul li:hover {
+    background-color: #FFF2E7;
+}
+
+.navbar .menu-navbar ul li:hover a {
+    color: #ff7506;
+}
+
+.navbar .menu-navbar ul li:hover svg path {
+    stroke: #ff7506;
+}
+
+.navbar .menu-navbar ul li:hover svg circle {
+    stroke: #ff7506;
+}
+
+.navbar .menu-navbar ul li svg {
+    margin-right: 10px;
+}
+
+.navbar .menu-navbar ul li a {
+    text-decoration: none;
+    color: #7E7D88;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .menu-navbar ul li button {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+li:has( a.active_navlink) {
+    background-color: #ff7506;
+    color: white;
+}
+
+li:has( a.active_navlink) a {
+    color: white !important;
+}
+
+li:has( a.active_navlink) svg path {
+    stroke: white !important;
+}
+
+li:has( a.active_navlink) svg circle {
+    stroke: white !important;
+}
+
+li:has( a.active_navlink):hover {
+    background-color: #ff7506 !important;
+}
+
+li:has( a.active_navlink):hover a {
+    color: white !important;
+}
+
+li:has( a.active_navlink):hover svg path {
+    stroke: white !important;
+}
+
+li:has( a.active_navlink):hover svg circle {
+    stroke: white !important;
+}
+
+.main {
+    background-color: #F6F6F6;
+    padding: 15px 0px 15px 20px;
+}
+
+.main .title-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .title-main .navbar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.main .title-main .navbar-title button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 7px;
+    background-color: #FFF2E7;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.main .title-main .navbar-title button svg path {
+    fill: #ff7506;
+}
+
+.main .title-main .navbar-title h5 {
+    padding: 0;
+    margin: 0;
+    color: #ff7506;
+    font-weight: 700;
+}
+
+.main .title-main .user-title {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    align-items: center;
+}
+
+.main .title-main .user-title .avata-user img {
+    border-radius: 100%;
+}
+
+.main .title-main .user-title .name-user {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.main .title-main .user-title .name-user p,
+.main .title-main .user-title .name-user h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.main .title-main .user-title .name-user h5 {
+    font-weight: 700;
+}
+
+
+/* Sub menu setting system */
+
+.navbar .menu-navbar .setting_system {
+    position: relative;
+}
+
+.navbar .menu-navbar .sub_menu_active {
+    display: block !important;
+}
+
+.navbar .menu-navbar .sub_menu {
+    position: absolute;
+    right: -192px;
+    background-color: white;
+    z-index: 999;
+    top: 0;
+    display: none;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.navbar .menu-navbar .sub_menu ul li {
+    padding: 10px 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.navbar .menu-navbar .sub_menu ul li {
+    display: flex;
+}
+
+.navbar .menu-navbar .sub_menu ul li a {
+    color: #7E7D88 !important;
+}
+
+.navbar .menu-navbar .sub_menu ul li:hover a {
+    color: #ff7506 !important;
+}
+
+.navbar .menu-navbar .sub_menu ul li a.active_navlink {
+    color: white !important;
+}
